@@ -1,19 +1,19 @@
-# DITA-OT publishing with GitHub Actions
+# DITA-OT Publishing with GitHub Actions
 
-Template site for publishing Bootstrap-themed HTML and PDF using the DITA Open Toolkit with GitHub Actions.
+Template site for publishing Bootstrap-themed HTML and PDF using [GitHub Action for DITA-OT Builds](https://github.com/dita-ot/dita-ot-action).
 
-## Instructions for VT students
+## Instructions
 
 1. Click on the "Use this template" green button on the top of this page
-2. You need to create a repository based on the template. **Be sure to select the "Include all branches" option. We need all branches of the repository.**
-3. Create your new repository based on the template.
+2. Create a repository based on the template.
+  - **Be sure to select the "Include all branches" option. You will need all branches of the repository.**
 
-### Next steps and requirements
+### Next Steps and Requirements
 - Now, the Actions will automatically publish a Bootstrap-themed HTML and a PDF using the DITA Open Toolkit
 - You must have a file named `index.dita` inside the `dita` folder
 - You must name your main DITA map `document.ditamap`
   - Of course, you can rename them, but that also requires renaming them inside the workflow file (and you don't want to do that... do you?)
-- Customize your header file to replace banner title and icon
+- Customize your header file to replace the banner title and icon
 - Change your theme for PDF and HTML styles.
 
 ###  Ensure GITHUB_TOKEN Has Sufficient Permissions
@@ -21,15 +21,15 @@ Template site for publishing Bootstrap-themed HTML and PDF using the DITA Open T
 - Under Workflow permissions, ensure that Read and write permissions is selected. This gives the GITHUB_TOKEN the necessary permission to push to the gh-pages branch.
 
 ---
-## A bit more how-to information
+## A Bit More How-to Information
 
-### Create Your Content in the "dita" Folder
+### Create Your Content in the `dita` Folder
 
 All of your DITA files (topics, maps, images, and other resources) should be placed inside the `dita` folder located within the repository.
 
 ### Trigger the GitHub Action for Publishing
 
-Once you have committed your changes (via GitHub or via Oxygen Content Fusion), the GitHub Action for publishing will automatically trigger and will run in the background.
+Once you have committed your changes, the GitHub Action for publishing will automatically trigger and will run in the background.
 
 The GitHub Action workflow is pre-configured to start every time you commit changes to the repository.
 It is defined in the `.github/workflows/ci.yml` file (CI stands for continuous integration), which runs the DITA Open Toolkit to process your DITA content and generate the output files (e.g., HTML, PDF).

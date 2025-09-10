@@ -54,3 +54,5 @@ You can find and download these files from the repository directly or view them 
 Thanks to the following DITA-OT experts:
 - Jason Fox
 - Roger Sheen.
+
+This template uses the [GitHub Action for DITA-OT Builds](https://github.com/dita-ot/dita-ot-action).

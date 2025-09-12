@@ -43,7 +43,7 @@ Give the built-in `GITHUB_TOKEN` permission to publish:
 
 Put all of your DITA content inside the `dita` directory:
 
-repo-root/
+```repo-root/
 ├─ .github/
 │ ├─ workflows/
 │ │ └─ ci.yml
@@ -59,6 +59,7 @@ repo-root/
 ├─ index.dita ← homepage topic for the site
 ├─ topics/…
 └─ images/…
+```
 
 **Requirements**
 

@@ -98,6 +98,15 @@ Put all of your DITA content inside the `dita` directory:
 4. Your site will be available at:  
 `https://<your-username>.github.io/<your-repo>/`
 
+### PDF Deliverable
+
+The PDF output is not deployed directly to GitHub Pages.  
+Instead, each workflow run on the **Actions** page provides the PDF as a downloadable **artifact**:
+
+1. Go to the **Actions** tab in your repository.  
+2. Select the latest successful workflow run.  
+3. Scroll down to the **Artifacts** section.  
+4. Click the PDF artifact link to download your deliverable. 
 ---
 
 ## 🎨 Customize the Outputs

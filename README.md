@@ -112,8 +112,8 @@ Put all of your DITA content inside the `dita` directory:
 ### 🖥️ Website Theme
 
 - Update the header text in **`.github/dita-ot/header.xml`** (default shown below):
-```xml
-<span class="align-middle">DITA Open Toolkit experiments</span>```
+
+`<span class="align-middle">DITA Open Toolkit experiments</span>`
 
 - Modify `.github/dita-ot/footer.xml` as needed.
 - Adjust `.github/dita-ot/theme.css` to change colors, fonts, and layout.

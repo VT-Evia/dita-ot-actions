@@ -49,6 +49,18 @@ If the workflow completes successfully, the output files (such as HTML or PDF) w
 
 You can find and download these files from the repository directly or view them through the GitHub Pages side of your repository.
 
+### Customize and Style the Deliverables
+
+If, for some reason, you do not want your deliverables (PDF and website) styled in Virginia Tech colors, you can customize them by editing the following files:
+
+#### For the PDF Deliverable 
+- Inside the `.github/themes` folder, replace the file `logo.png` with the logo you want to display on the cover page of your PDF deliverable. Keep the file name as `logo.png` unless you also plan to modify the publishing action, which is beyond the scope of this basic customization section.  
+- In the same folder, edit the `theme.yaml` file to update brand colors, fonts, and other settings. If you are unsure how to make changes in a YAML file, we strongly recommend pasting the file into an LLM chat agent and requesting a customized version.
+
+#### For the Website Deliverable
+- You will likely want to modify the header to replace the default "DITA Open Toolkit experiments" text included in the template. The `header.xml` file is located inside the `.github/dita-ot` folder, and the text appears on line 24 within the tag `<span class="align-middle">DITA Open Toolkit experiments</span>`.  
+- In the same folder, you can also edit `footer.xml` and, most importantly, `theme.css`, which controls the website’s colors and fonts. If you are not familiar with editing CSS, we again recommend pasting the file into an LLM chat agent and requesting a customized version.  
+- For more advanced customization of the website deliverable, refer to the [`dita-bootstrap` plugin documentation](https://infotexture.github.io/dita-bootstrap/) maintained by Roger Sheen.
 
 ## Credits
 

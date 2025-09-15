@@ -74,7 +74,7 @@ Put all of your DITA content inside the `dita` directory:
 
 - Every **push** to the repository triggers the build defined in **`.github/workflows/ci.yml`**.  
 - The workflow runs DITA-OT to generate:
-  - 🌐 **Bootstrap-themed HTML**
+  - 🌐 **[Bootstrap](https://getbootstrap.com/)-themed HTML**
   - 📄 **PDF**
 
 ### 📊 Monitor Workflow Runs

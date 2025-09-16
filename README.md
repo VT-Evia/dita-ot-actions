@@ -55,10 +55,10 @@ Put all of your DITA content inside the `dita` directory:
 │ ├─ logo.png
 │ └─ theme.yaml
 └─ dita/
-├─ document.ditamap ← main map (required by the default workflow)
-├─ index.dita ← homepage topic for the site
-├─ topics/…
-└─ images/…
+|├─ document.ditamap ← main map (required by the default workflow)
+|├─ index.dita ← homepage topic for the site
+|├─ topics/…
+|└─ images/…
 ```
 
 **Requirements**
@@ -66,6 +66,7 @@ Put all of your DITA content inside the `dita` directory:
 - 📄 **Main map name**: The default workflow expects **`document.ditamap`**.  
   - You *can* rename it, but then you must update the workflow where it references `document.ditamap` (open `.github/workflows/ci.yml` and search for that filename).
 - 🏠 **Homepage**: Create `dita/index.dita` to serve as the site’s landing page.
+  - You need to reference your `index.dita` as the first topic reference in your `document.ditamap`. Otherwise, your deliverables will not have a home page or introduction.
 - 📁 Keep topics, maps, and media under the `dita/` folder.
 
 ---

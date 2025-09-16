@@ -55,10 +55,10 @@ Put all of your DITA content inside the `dita` directory:
 │ ├─ logo.png
 │ └─ theme.yaml
 └─ dita/
-|├─ document.ditamap ← main map (required by the default workflow)
-|├─ index.dita ← homepage topic for the site
-|├─ topics/…
-|└─ images/…
+│├─ document.ditamap ← main map (required by the default workflow)
+│├─ index.dita ← homepage topic for the site
+│├─ topics/…
+│└─ images/…
 ```
 
 **Requirements**
